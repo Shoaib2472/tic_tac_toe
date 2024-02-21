@@ -16,7 +16,7 @@ io.on("connection", (socket) => {
     socket.on("createRoom", async ({ nickname }) => {
         console.log(nickname);
         try {
-            let room = new Room(); //first create an instance of it
+            let room = new Room(); //first crPeate an instance of it
             let player = {
                 socketID: socket.id,
                 nickname: nickname,
